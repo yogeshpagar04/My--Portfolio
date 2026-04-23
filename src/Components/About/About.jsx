@@ -25,14 +25,16 @@ const About = () => {
         </h1>
         <div className={styles.borderBottom} />
         <p style={{ color: `${newTheme.para}` }} className={styles.aboutMe}>
-          Hello! My name is Vinayak and I like to build websites/application that
+          Hello! My name is Yogesh and I like to build websites/application that
           serves the world and always want to enhance my knowledge & adpot new
-          technologies that make impact on people. My interest in web
-          development started when I joined Masai School to learn full stack
-          Web-Development — taught me alot about HTML & CSS. <br />
-          <br /> Fast Forwarding to today, I built a number of web applications
-          and major projects. Learned a great deal about teamwork, leadership,
-          and communication. After months of rigorous training, here I am
+          technologies that make impact on peopleMy interest in web development started during my academic journey, where I
+          began learning full-stack development and gained a strong foundation in HTML,
+          CSS, JavaScript, and modern frameworks.
+          . <br />
+          <br /> Fast forward to today, I have developed multiple web applications and projects,
+          including full-stack applications using technologies like React, Node.js,
+          Express, and MongoDB. Through these experiences, I have strengthened my skills
+          in problem-solving, teamwork, and communication.here i am
           <span style={{ color: `#00a0a0` }}>
             {" "}
             looking for an opportunity as a full stack web developer

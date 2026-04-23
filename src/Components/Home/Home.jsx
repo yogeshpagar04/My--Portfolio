@@ -5,7 +5,7 @@ import SideIcons from "../SideIcons/SideIcons";
 import TechStacks from "../TechStacks/TechStacks";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img1 from "../../assets/Vinayak.jpeg"
+import img1 from "../../assets/yogesh.jpeg"
 import { Button } from "../Button/Button";
 import About from "../About/About";
 import { projects } from "../../Utils/Projects";
@@ -72,13 +72,13 @@ const Home = ({ scrollRef }) => {
           <h1>
             <span>Hey👋, I'm </span>
             <div className={styles.name} style={{ color: `${newTheme.title}` }}>
-              Vinayak.
+              Yogesh.
             </div>
           </h1>
           <h1>Full Stack Web Developer.</h1>
           <div className={styles.btn}>
             <a
-              href="https://drive.google.com/file/d/1dWwU8fm-hg3mvY6yV6iwv3jzsMCHo30-/view?usp=share_link"
+              href="https://drive.google.com/file/d/1AHVjTTtTiSyY9YIfCODT0L5HuKPVM7zq/view?usp=drivesdk"
 
 
               target="_blank"

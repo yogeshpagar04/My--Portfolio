@@ -119,7 +119,7 @@ const TechStacks = () => {
 					className={styles.logoWrapper}
 				>
 					{/* <i className='devicon-mongodb-plain colored' /> */}
-					<span>Data Structures And Algorithms</span>
+					{/* <span>Data Structures And Algorithms</span> */}
 				</div>
 			</div>
 		</div>

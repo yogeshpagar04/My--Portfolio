@@ -18,11 +18,11 @@ const Contact = () => {
     
           <p style={{ color: `#00a0a0`, lineHeight: ``,fontSize:`20px` }}>
             {/* {" "} */}
-            Email: vinayakpagar1999@gmail.com
+            Email: yogeshpagar1661@gmail.com
           </p>
 
 		  <p style={{ color: `#00a0a0`,fontSize:`20px`}}>
-		  Mobile: +91-<span style={{ color: `#00a0a0`, fontSize:`20px`, textDecoration: `underline` }} >9689886567</span>{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}
+		  Mobile: +91-<span style={{ color: `#00a0a0`, fontSize:`20px`, textDecoration: `underline` }} >8999711919</span>{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}
           </p>
 		  <p style={{ color: `#00a0a0`,fontSize:`20px` }}>
             Location: Nashik, Maharashtra, India{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}
@@ -33,7 +33,7 @@ const Contact = () => {
           className={styles.contactOptions}
         >
           <a
-            href="tel:9689886567"
+            href="tel:8999711919"
             aria-label="GitHub"
             rel="noreferrer"
             target="_blank"
@@ -50,7 +50,7 @@ const Contact = () => {
           </a>
          
           <a
-            href="https://github.com/vinayakpagar23"
+            href="https://github.com/yogeshpagar04"
             aria-label="GitHub"
             rel="noreferrer"
             target="_blank"
@@ -59,7 +59,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/vinayakpagar99/"
+            href="https://www.linkedin.com/in/yogesh-pagar-344936296"
             aria-label="Linkedin"
             target="_blank"
             rel="noreferrer"
@@ -70,7 +70,7 @@ const Contact = () => {
       </div>
       <div style={{ background: `${newTheme.line}` }} className={styles.line} />
       <div style={{ color: `${newTheme.para}` }} className={styles.copyright}>
-        Designed and build by Vinayak, 2022 All rights reserved.
+        Designed and build by yogesh, 2026 All rights reserved.
       </div>
     </footer>
   );
