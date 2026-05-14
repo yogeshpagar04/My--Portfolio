@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yogesh_portfolio/static/css/main.69bf27bf.css",
+    "main.js": "/yogesh_portfolio/static/js/main.f3f6781d.js",
+    "static/js/787.ddad06ac.chunk.js": "/yogesh_portfolio/static/js/787.ddad06ac.chunk.js",
+    "static/media/yogesh.jpeg": "/yogesh_portfolio/static/media/yogesh.f46c3363763118fb5a6e.jpeg",
+    "index.html": "/yogesh_portfolio/index.html",
+    "main.69bf27bf.css.map": "/yogesh_portfolio/static/css/main.69bf27bf.css.map",
+    "main.f3f6781d.js.map": "/yogesh_portfolio/static/js/main.f3f6781d.js.map",
+    "787.ddad06ac.chunk.js.map": "/yogesh_portfolio/static/js/787.ddad06ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69bf27bf.css",
+    "static/js/main.f3f6781d.js"
+  ]
+}
