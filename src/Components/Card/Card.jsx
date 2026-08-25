@@ -53,18 +53,43 @@ const Card = (props) => {
 						/>
 					)}
 					<p style={{ color: `${newTheme.para}` }}>{des}</p>
-					<div>
+					<div className={styles.techWrapper}>
 						{technologies.map((technology, index) => (
 							<span
 								key={index}
+								className={styles.techBadge}
 								style={{
-									marginLeft: '20px',
 									color: `${newTheme.title}`,
+									borderColor: `${newTheme.line}`,
 								}}
 							>
 								{technology}
 							</span>
 						))}
+					</div>
+					<div className={styles.cardActions}>
+						{gitHub && (
+							<a
+								href={gitHub}
+								target='_blank'
+								rel='noopener noreferrer'
+								className={styles.actionBtn}
+								title='GitHub Repository'
+							>
+								<i className='fab fa-github' /> Code
+							</a>
+						)}
+						{live && (
+							<a
+								href={live}
+								target='_blank'
+								rel='noopener noreferrer'
+								className={styles.actionBtnPrimary}
+								title='Live Demo'
+							>
+								<i className='fas fa-external-link-alt' /> Live Demo
+							</a>
+						)}
 					</div>
 				</div>
 
@@ -136,21 +161,6 @@ const Card = (props) => {
 						</div>
 					</div>
 				</Dialog>
-				{/* -----------------For hovering container--------------- */}
-				<div
-					style={{
-						color: `${newTheme.para}`,
-						background: `${newTheme.linkHover}`,
-					}}
-					className={styles.description}
-				>
-					<a href={gitHub} rel='noopener noreferrer' target='_blank'>
-						<i className='fab fa-github' />
-					</a>
-					<a href={live} rel='noopener noreferrer' target='_blank'>
-						<i className='fas fa-external-link-alt' />
-					</a>
-				</div>
 			</div>
 		</div>
 	);

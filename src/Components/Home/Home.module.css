@@ -32,13 +32,40 @@ body::after {
   clip-path: circle(10% at 5% 5%);
 }
 .intro {
-  max-width: 50vw;
+  max-width: 550px;
   text-align: left;
   color: #8993b1;
-  padding-left: 10vw;
-  transition: 0.5s;
-  font-size: clamp(10px, 2vw, 15px);
-  position: fixed;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.subHeading {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: #64ffda;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.bioTagline {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin: 15px 0 25px 0;
+  line-height: 1.6;
 }
 
 .experience {
@@ -47,182 +74,176 @@ body::after {
   justify-content: center;
   padding: 80px 0;
 }
+
 .extraIntro {
   width: 60%;
   padding: 30px;
   margin: auto;
-
   font-weight: 400;
   font-style: italic;
   font-size: 2em;
   margin-top: -10px;
   color: #8993b1;
 }
+
 .name {
   color: #ccd6f6;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 800;
 }
+
 .profile {
-  margin-top: 0;
-  height: 100vh;
-  /* width: 100%; */
+  min-height: 90vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  background-size: 550px;
-  background-color: #0e0914;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: 60vw;
-  background-position-y: 10vh;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 5vw 40px 5vw;
+  position: relative;
+  box-sizing: border-box;
 }
+
 .profileImage {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   overflow: hidden;
-  margin-left: 60px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  border-bottom: 7px solid #9802be;
-  transform: rotate(-2deg);
-  transition: 0.5s;
-  position: fixed;
-  right: 8vw;
+  align-items: center;
+  border: 4px solid #64ffda;
+  box-shadow: 0 0 35px rgba(100, 255, 218, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
 }
+
+.profileImage:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 45px rgba(99, 102, 241, 0.4);
+}
+
 .profileImage img {
-  width: 400px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .techStacks {
   padding: 50px 0;
   margin: 5vh 0;
 }
+
 .projects {
-  width: fit-content;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
   padding: 8vh 0;
 }
+
 .heading {
   width: fit-content;
   margin: auto;
   color: #8993b1;
   line-height: 40px;
+  font-size: 2rem;
+  font-weight: 700;
 }
+
 .borderBottom {
-  border-bottom: 3px solid #0282bd;
-  width: 200px;
-  margin: 10px auto;
+  border-bottom: 3px solid #64ffda;
+  width: 120px;
+  margin: 15px auto 30px auto;
   border-radius: 10px;
 }
+
 .line {
   width: 80%;
   height: 1px;
   margin: 150px auto;
 }
+
 .resumeBtn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .resumeBtn i {
   margin-left: 10px;
   font-size: 20px;
 }
 
-@media screen and (max-width: 1300px) {
-  .profile {
-    padding-right: 5vw;
-  }
-  .intro {
-    width: 50%;
-    padding-left: 5vw;
-  }
-  .profileImage {
-    margin-left: 30px;
-  }
+.btnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
 }
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.showBtn {
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border-color: #64ffda;
+}
+
+.showBtn:hover {
+  background: rgba(100, 255, 218, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
+}
+
+.downloadBtn {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: #ffffff;
+}
+
+.downloadBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.bothBtn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.bothBtn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
 @media screen and (max-width: 900px) {
-  .profileImage {
-    width: 300px;
-    height: 300px;
-  }
-  .profileImage img {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 830px) {
   .profile {
-    background-position-x: 50vw;
-    background-position-y: 15vh;
-    background-size: 50vw;
-    background-attachment: fixed;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 20px;
   }
   .intro {
-    max-width: 45%;
-  }
-  .extraIntro {
-    width: 70vw;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 830px) {
-  .profile {
-    background-position: bottom right;
-  }
-}
-@media screen and (max-width: 650px) {
-  .profile {
-    margin: auto;
-    min-height: 100vh;
-    background-size: 100vw;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: soft-light;
-    padding: 0;
-  }
-  .intro {
-    min-width: 95% !important;
+    max-width: 100%;
     text-align: center;
-    padding: 3vh 0 !important;
-    font-size: 0.9em;
-    left: 2.5%;
-    margin-top: 40vw;
-    padding: 0;
+    padding: 1rem;
   }
-
   .profileImage {
-    position: fixed;
-    width: 50vw;
-    height: 50vw;
-    top: 80px;
-    right: 50%;
-    transform: translateX(50%) !important;
-  }
-  .profileImage img {
-    width: 50vw;
-  }
-  .name {
-    font-size: 42px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .profileImage {
-    width: 40vw;
-    height: 40vw;
-    top: 70px;
-    right: 50%;
-    transform: translateX(50%) !important;
-  }
-  .profileImage img {
-    width: 40vw;
-  }
-  .intro {
-    margin-top: 30vh;
-    font-size: 0.7em;
-  }
-  .name {
-    font-size: 1.5em;
+    width: 240px;
+    height: 240px;
   }
 }

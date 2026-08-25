@@ -25,25 +25,20 @@ const About = () => {
         </h1>
         <div className={styles.borderBottom} />
         <p style={{ color: `${newTheme.para}` }} className={styles.aboutMe}>
-          Hello! My name is Yogesh and I like to build websites/application that
-          serves the world and always want to enhance my knowledge & adpot new
-          technologies that make impact on peopleMy interest in web development started during my academic journey, where I
-          began learning full-stack development and gained a strong foundation in HTML,
-          CSS, JavaScript, and modern frameworks.
-          . <br />
-          <br /> Fast forward to today, I have developed multiple web applications and projects,
-          including full-stack applications using technologies like React, Node.js,
-          Express, and MongoDB. Through these experiences, I have strengthened my skills
-          in problem-solving, teamwork, and communication.here i am
-          <span style={{ color: `#00a0a0` }}>
-            {" "}
-            looking for an opportunity as a full stack web developer
-          </span>
-          .
+          Hello! My name is <strong>Yogesh Pagar</strong>, a Software Engineer & Full Stack Web Developer based in Nashik, India.
+          I have completed my <strong>Bachelor of Engineering in Information Technology</strong> from Savitribai Phule Pune University (2022 – 2026).
+          <br /><br />
+          I specialize in building scalable web applications using <strong>JavaScript, React.js, Node.js, Express.js, and MongoDB</strong>.
+          I am passionate about integrating Generative AI using <strong>Gemini and OpenAI APIs</strong>, developing RESTful APIs,
+          implementing secure applications with <strong>JWT Authentication</strong>, and creating responsive, user-friendly interfaces.
+          <br /><br />
+          I am actively seeking opportunities as a <span style={{ color: `#64ffda`, fontWeight: 700 }}>
+            Software Engineer, Full Stack Developer, or Web Developer
+          </span>.
         </p>
       </div>
     </div>
-  );
+      );
 };
 
-export default About;
+      export default About;

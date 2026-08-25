@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from 'react';
+import React, { useRef, useContext } from 'react';
 import { ThemeContext } from '../../ContextProvider/ThemeContext';
 import styles from './Navbar.module.css';
 
@@ -55,7 +55,7 @@ const Navbar = () => {
 		>
 			<div className={styles.navbar}>
 			
-			<a  href='#'>
+			<a href='#home'>
 					<div className={styles.logo}>
 						<img
 							src='https://t4.ftcdn.net/jpg/01/01/51/09/360_F_101510953_hYf4T5StHuKhpzL4GrrtObaWSgjquX3S.jpg'

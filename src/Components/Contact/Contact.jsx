@@ -41,7 +41,7 @@ const Contact = () => {
             <i className="fas fa-phone-alt" />
           </a>
           <a
-            href="mailto: vinayakpagar1999@gmail.com"
+            href="mailto:yogeshpagar1661@gmail.com"
             aria-label="email"
             target="_blank"
             rel="noreferrer"
@@ -59,7 +59,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/yogesh-pagar-344936296"
+            href="https://www.linkedin.com/in/yogeshpagar46"
             aria-label="Linkedin"
             target="_blank"
             rel="noreferrer"

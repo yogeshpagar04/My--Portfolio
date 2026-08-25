@@ -25,11 +25,9 @@ function App() {
 					}}
 					className='logoStart'
 				>
-					<img
-					className='s_logo'
-						src='https://i.gifer.com/g0R9.gif'
-						alt='logo'
-					/>
+					<div className='loaderBadge'>
+						<span>YP</span>
+					</div>
 				</div>
 			) : (
 				<div className='components'>

@@ -17,11 +17,15 @@ import Experience from "../experience/Experience";
 
 
 
+import ResumeModal from "../ResumeModal/ResumeModal";
+
 const Home = ({ scrollRef }) => {
   const [projectArray, setProjectArray] = useState(projects.slice(0, 4));
   const { newTheme } = React.useContext(ThemeContext);
   const [offset, setOffset] = useState(0);
   const [location, setLocation] = useState(0);
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
   useEffect(() => {
     AOS.init();
   });
@@ -39,7 +43,20 @@ const Home = ({ scrollRef }) => {
     document.body.style.backgroundColor = newTheme.background;
   }, [newTheme]);
 
-  const handleButton = () => {};
+  const handleDownloadResume = () => {
+    const resumeUrl = `${process.env.PUBLIC_URL}/Yogesh_Pagar_Resume.pdf?v=${Date.now()}`;
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Yogesh_Pagar_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleShowAndDownload = () => {
+    setIsResumeModalOpen(true);
+    handleDownloadResume();
+  };
 
   console.log(offset);
   const handleShowMoreBtn = () => {
@@ -55,59 +72,64 @@ const Home = ({ scrollRef }) => {
   return (
     <div ref={scrollRef} className={styles.suraj}>
       <SideIcons />
+      <ResumeModal
+        isOpen={isResumeModalOpen}
+        onClose={() => setIsResumeModalOpen(false)}
+      />
       <div
         id="home"
         className={styles.profile}
         style={{ backgroundColor: `${newTheme.imgBackground}` }}
       >
         <div
-          data-aos="fade-zoom-out"
+          data-aos="fade-up"
           className={styles.intro}
           style={{
             color: `${newTheme.para}`,
-            transform: `translateX(-${offset * 2.5}px)`,
-            opacity: `${offset > 300 ? "0" : offset > 160 ? ".5" : "1"}`,
           }}
         >
+          <div className={styles.badge}>Available for Work</div>
           <h1>
             <span>Hey👋, I'm </span>
             <div className={styles.name} style={{ color: `${newTheme.title}` }}>
-              Yogesh.
+              Yogesh Pagar
             </div>
           </h1>
-          <h1>Full Stack Web Developer.</h1>
-          <div className={styles.btn}>
-            <a
-              href="https://drive.google.com/file/d/1AHVjTTtTiSyY9YIfCODT0L5HuKPVM7zq/view?usp=drivesdk"
-
-
-              target="_blank"
-              rel="noreferrer"
+          <h2 className={styles.subHeading}>Full Stack Web Developer (MERN & GenAI)</h2>
+          <p className={styles.bioTagline}>
+            Crafting intelligent web applications, AI tools, and scalable MERN stack solutions.
+          </p>
+          <div className={styles.btnContainer}>
+            <button
+              className={`${styles.actionBtn} ${styles.showBtn}`}
+              onClick={() => setIsResumeModalOpen(true)}
             >
-              {/* resume link have to update above */}
-              <Button
-                text={
-                  <span className={styles.resumeBtn}>
-                    <span>Resume</span> <i className="fas fa-file-download"></i>
-                  </span>
-                }
-                handleButton={handleButton}
-              />
-            </a>
+              <i className="fas fa-eye"></i> Show Resume
+            </button>
+            
+            <button
+              className={`${styles.actionBtn} ${styles.downloadBtn}`}
+              onClick={handleDownloadResume}
+            >
+              <i className="fas fa-file-download"></i> Download Resume
+            </button>
+
+            <button
+              className={`${styles.actionBtn} ${styles.bothBtn}`}
+              onClick={handleShowAndDownload}
+            >
+              <i className="fas fa-cloud-download-alt"></i> Show &amp; Download
+            </button>
           </div>
         </div>
 
         <div
-          style={{
-            transform: `translateX(${offset * 2.5}px)`,
-            opacity: `${offset > 300 ? "0" : offset > 160 ? ".5" : "1"}`,
-           
-          }}
+          data-aos="fade-left"
           className={styles.profileImage}
         >
           <img
             src={img1}
-            alt="Profile pic"
+            alt="Yogesh Pagar - Profile"
           />
         </div>
       </div>
