@@ -1,8 +1,31 @@
 import todoImg from '../assets/todo.png';
 import envMonitoringImg from '../assets/env_monitoring.png';
 import resumeBuilderLogo from '../assets/resume_builder_logo.png';
+import pillSyncImg from '../assets/pillsync.png';
 
 export const projects = [
+  {
+    img: pillSyncImg,
+    title: "PillSync – Intelligent Medicine Reminder & Medication Tracking Platform",
+    role: "Team Leader & Full-Stack Developer",
+    organization: "Infosys Springboard Internship 7.0",
+    category: "Healthcare Technology | Full-Stack Web Application",
+    des: "An intelligent healthcare web application that helps patients manage medication schedules, track dosage adherence, and monitor medicine inventory. Features caregiver coordination, prescription OCR scanning, dosage scheduling & validation, low-stock alerts, and AI-assisted refill prediction.",
+    contribution: "As Team Leader, led dosage scheduling, dosage validation, medication tracking workflows, and frontend–backend integration, along with REST API connectivity.",
+    demo: "",
+    live: "https://pillsync-web-yogesh.onrender.com/",
+    gitHub: "https://github.com/GKSJ-Deepvision/PillSync",
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Python",
+      "REST APIs",
+      "Prescription OCR",
+      "AI Integration",
+      "Database Technologies",
+      "Git & GitHub"
+    ]
+  },
   {
   img: resumeBuilderLogo,
   title: "GenAI Resume Builder System",

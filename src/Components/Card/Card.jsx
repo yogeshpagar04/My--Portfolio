@@ -8,7 +8,18 @@ import Dialog from '@material-ui/core/Dialog';
 const Card = (props) => {
 	const [state, setState] = useState(false);
 	const { newTheme } = React.useContext(ThemeContext);
-	const { img, des, title, live, gitHub, technologies } = props;
+	const {
+		img,
+		des,
+		title,
+		live,
+		gitHub,
+		technologies,
+		role,
+		organization,
+		category,
+		contribution,
+	} = props;
 
 	const [width] = WindowSize();
 
@@ -45,6 +56,31 @@ const Card = (props) => {
 					}
 				>
 					<h2 style={{ color: `${newTheme.title}` }}>{title}</h2>
+					{(role || organization || category) && (
+						<div className={styles.metaInfo}>
+							{category && (
+								<span
+									className={styles.categoryBadge}
+									style={{
+										color: newTheme.accent || '#64ffda',
+										borderColor: newTheme.accent || '#64ffda',
+									}}
+								>
+									{category}
+								</span>
+							)}
+							{(role || organization) && (
+								<span
+									className={styles.roleText}
+									style={{ color: newTheme.para }}
+								>
+									<strong style={{ color: newTheme.title }}>{role}</strong>
+									{role && organization && ' • '}
+									{organization}
+								</span>
+							)}
+						</div>
+					)}
 					{width <= 840 && (
 						<Button
 							text='Read More'
@@ -109,7 +145,38 @@ const Card = (props) => {
 							<img src={img} alt='project' />
 						</div>
 						<h2 style={{ color: `${newTheme.title}` }}>{title}</h2>
+						{(role || organization || category) && (
+							<div className={styles.metaInfo} style={{ marginBottom: '12px' }}>
+								{category && (
+									<span
+										className={styles.categoryBadge}
+										style={{
+											color: newTheme.accent || '#64ffda',
+											borderColor: newTheme.accent || '#64ffda',
+										}}
+									>
+										{category}
+									</span>
+								)}
+								{(role || organization) && (
+									<span
+										className={styles.roleText}
+										style={{ color: newTheme.para }}
+									>
+										<strong style={{ color: newTheme.title }}>{role}</strong>
+										{role && organization && ' • '}
+										{organization}
+									</span>
+								)}
+							</div>
+						)}
 						<p style={{ color: `${newTheme.para}` }}>{des}</p>
+						{contribution && (
+							<p style={{ color: `${newTheme.para}`, marginTop: '10px' }}>
+								<strong style={{ color: newTheme.accent || '#64ffda' }}>Contribution: </strong>
+								{contribution}
+							</p>
+						)}
 						<div className={styles.popupTech}>
 							{technologies.map((technology, index) => (
 								<div

@@ -70,6 +70,30 @@ const Experience = () => {
 
         <div className={styles.borderBottom} />
 
+        {/* Infosys Springboard */}
+        <h2 style={{ color: newTheme.title }} className={styles.heading}>
+          Software Development Intern (Team Leader)
+        </h2>
+
+        <h3 style={{ color: newTheme.title }} className={styles.aboutMe}>
+          Infosys Springboard (Remote) | August 2026 – October 2026
+        </h3>
+
+        <ul style={{ color: newTheme.para }} className={styles.aboutMe}>
+          <li>
+            Contributed to and led development of <strong>PillSync</strong>, an intelligent medicine reminder and medication tracking platform.
+          </li>
+          <li>
+            Worked on dosage scheduling, dosage analysis, input validation, and frontend–backend integration.
+          </li>
+          <li>
+            Integrated application modules and REST APIs supporting medication tracking and reminder workflows.
+          </li>
+          <li>
+            Collaborated with team members on application testing, debugging, integration, and feature development.
+          </li>
+        </ul>
+
         {/* Anvistar */}
         <h2 style={{ color: newTheme.title }} className={styles.heading}>
           Software Development Intern
