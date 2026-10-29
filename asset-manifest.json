@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/yogesh_portfolio/static/css/main.69bf27bf.css",
-    "main.js": "/yogesh_portfolio/static/js/main.f3f6781d.js",
-    "static/js/787.ddad06ac.chunk.js": "/yogesh_portfolio/static/js/787.ddad06ac.chunk.js",
-    "static/media/yogesh.jpeg": "/yogesh_portfolio/static/media/yogesh.f46c3363763118fb5a6e.jpeg",
-    "index.html": "/yogesh_portfolio/index.html",
-    "main.69bf27bf.css.map": "/yogesh_portfolio/static/css/main.69bf27bf.css.map",
-    "main.f3f6781d.js.map": "/yogesh_portfolio/static/js/main.f3f6781d.js.map",
-    "787.ddad06ac.chunk.js.map": "/yogesh_portfolio/static/js/787.ddad06ac.chunk.js.map"
+    "main.css": "./static/css/main.a536bb83.css",
+    "main.js": "./static/js/main.fdbf0f27.js",
+    "static/js/787.ddad06ac.chunk.js": "./static/js/787.ddad06ac.chunk.js",
+    "static/media/resume_builder_logo.png": "./static/media/resume_builder_logo.ece566f342cf65cdf22c.png",
+    "static/media/env_monitoring.png": "./static/media/env_monitoring.4d3064c06ddcdcf4eef2.png",
+    "static/media/todo.png": "./static/media/todo.e513b409e6afae2dfaf9.png",
+    "static/media/pillsync.png": "./static/media/pillsync.5539bbb717d4fcfdec5a.png",
+    "static/media/yogesh.jpeg": "./static/media/yogesh.f46c3363763118fb5a6e.jpeg",
+    "index.html": "./index.html",
+    "main.a536bb83.css.map": "./static/css/main.a536bb83.css.map",
+    "main.fdbf0f27.js.map": "./static/js/main.fdbf0f27.js.map",
+    "787.ddad06ac.chunk.js.map": "./static/js/787.ddad06ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69bf27bf.css",
-    "static/js/main.f3f6781d.js"
+    "static/css/main.a536bb83.css",
+    "static/js/main.fdbf0f27.js"
   ]
 }
